@@ -1,0 +1,22 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="site.css"/>
+        <nav id="nav"></nav>
+    </head>
+
+    <body>
+        <div class="body">
+        {{ with .PostsMetadata }}
+            <ul class="list">
+            {{ range . }}
+            <a href="{{ .Link }}"><li> {{ .Date }} -  {{ .Title }} </li></a>
+            {{ end }}
+            </ul>
+        {{ end }}
+        </div>
+    </body>
+    <script src="templates/nav.js"></script>
+
+</html>
+
