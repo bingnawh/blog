@@ -2,16 +2,11 @@ html {
     background: #FEF1E3;
 }
 
-@font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Noto Sans'), local('NotoSans'), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr6DRASf6M7VBj.woff2) format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
 h1 {
     font-family: 'Noto Sans';
 }
+
+
 .navigation {
     display: flex;
     flex-direction: row;
@@ -20,6 +15,7 @@ h1 {
 
 .navigation-item {
     padding: 0 6px;
+    text-decoration: none;
 }
 
 .body {
@@ -29,4 +25,15 @@ h1 {
 
 .list {
     list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: #696969;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
 }
