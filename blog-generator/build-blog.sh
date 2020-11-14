@@ -1,3 +1,3 @@
 go build .
-./bloggo
+./blog-generator
 mv *.html ../
