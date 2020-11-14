@@ -1,6 +1,7 @@
-var nav = '<ul class="list navigation">\
+var nav =
+    '<ul class="list navigation">\
                 <a href="about.html">\
-                <li cla:s="navigation-item">\
+                <li class="navigation-item">\
                     About\
                 </li>\
                 </a>\
@@ -16,4 +17,4 @@ var nav = '<ul class="list navigation">\
                 </a>\
             </ul>';
 
-document.getElementById('nav').innerHTML = nav;
+document.getElementById("nav").innerHTML = nav;

@@ -1,22 +1,26 @@
 <html>
-
     <head>
-        <link rel="stylesheet" href="site.css"/>
+        <link rel="stylesheet" href="site.css" />
         <nav id="nav"></nav>
     </head>
 
     <body>
         <div class="body">
-        {{ with .PostsMetadata }}
-            <ul class="list">
-            {{ range . }}
-            <li><a class="post-link" href="{{ .Link }}">{{ .Date }} -  {{ .Title }} </a></li>
+            {{ with .PostsMetadata }}
+            <table class="list">
+                <tbody>
+                    {{ range . }}
+                    <tr>
+                        <td class="date">{{ .Date }} -</td>
+                        <td class="link">
+                            <a href="{{ .Link }}"> {{ .Title }} </a>
+                        </td>
+                    </tr>
+                    {{ end }}
+                </tbody>
+            </table>
             {{ end }}
-            </ul>
-        {{ end }}
         </div>
     </body>
     <script src="nav.js"></script>
-
 </html>
-
