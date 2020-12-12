@@ -5,35 +5,37 @@ html {
 
 .navigation {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: center;
+    align-items: flex-end;
+    margin-right: 60px;
 }
 
 .navigation-item {
     font-size: 16px;
     text-decoration: none;
-    padding: 0 6px;
 }
 
 h1 {
     line-height: 1.1;
 }
 
-.body {
+body {
+    display: grid;
+    grid-template-columns: 100px auto;
     line-height: 1.6;
-    color: #2e2e2e;
     font-size: 16px;
-    padding: 24px 0;
+    padding: 48px 0;
     margin: 0 auto;
     max-width: 800px;
 }
 
-.list {
-    list-style: none;
+table {
+    width: 100%;
 }
 
-.date .link {
-    white-space: nowrap;
+.list {
+    list-style: none;
 }
 
 a {
@@ -44,4 +46,15 @@ a {
 a:hover {
     text-decoration: none;
     color: #000;
+}
+
+tr {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    line-height: 1.8;
+}
+
+td:nth-child(2) {
+    font-style: italic;
 }

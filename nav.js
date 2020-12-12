@@ -7,12 +7,12 @@ var nav =
                 </a>\
                 <a href="index.html">\
                 <li class="navigation-item">\
-                    Posts\
+                    Blog\
                 </li>\
                 </a>\
-                <a href="contact.html">\
+                <a href="books.html">\
                 <li class="navigation-item">\
-                    Contact\
+                    Books\
                 </li>\
                 </a>\
             </ul>';

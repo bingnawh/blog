@@ -5,22 +5,23 @@
     </head>
 
     <body>
-        <div class="body">
+        <main>
+            <h1>Blog</h1>
             {{ with .PostsMetadata }}
             <table class="list">
                 <tbody>
                     {{ range . }}
                     <tr>
-                        <td class="date">{{ .Date }} -</td>
                         <td class="link">
                             <a href="{{ .Link }}"> {{ .Title }} </a>
                         </td>
+                        <td class="date">{{ .Date }}</td>
                     </tr>
                     {{ end }}
                 </tbody>
             </table>
             {{ end }}
-        </div>
+        </main>
     </body>
     <script src="nav.js"></script>
 </html>
