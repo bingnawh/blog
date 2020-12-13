@@ -1,6 +1,6 @@
 var nav =
     '<ul class="list navigation">\
-                <a href="/about">\
+                <a href="about">\
                 <li class="navigation-item">\
                     About\
                 </li>\
