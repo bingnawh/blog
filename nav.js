@@ -5,12 +5,12 @@ var nav =
                     About\
                 </li>\
                 </a>\
-                <a href="index.html">\
+                <a href="index">\
                 <li class="navigation-item">\
                     Blog\
                 </li>\
                 </a>\
-                <a href="books.html">\
+                <a href="books">\
                 <li class="navigation-item">\
                     Books\
                 </li>\
