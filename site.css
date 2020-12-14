@@ -34,8 +34,14 @@ table {
     width: 100%;
 }
 
-.list {
+.list
+{
     list-style: none;
+}
+
+
+td > a {
+    text-decoration: none;
 }
 
 .booklist > li {
