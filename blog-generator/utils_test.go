@@ -11,9 +11,9 @@ func TestFormatBlogPostName(t *testing.T) {
 	}
 }
 func TestCreateLink(t *testing.T) {
-	formattedBlogTitle := "sample-title"
+	formattedBlogTitle := "Sample-Title"
 	got := CreateLink(formattedBlogTitle)
-	want := "sample-title.html"
+	want := "sample-title"
 	if got != want {
 		t.Errorf("got = %s, want %s", got, want)
 	}
