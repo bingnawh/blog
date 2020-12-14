@@ -34,13 +34,12 @@ table {
     width: 100%;
 }
 
-.list
-{
+.list {
     list-style: none;
 }
 
-
-td > a {
+td > a,
+a:hover {
     text-decoration: none;
 }
 
