@@ -38,18 +38,19 @@ table {
     list-style: none;
 }
 
-td > a,
-a:hover {
-    text-decoration: none;
-}
-
 .booklist > li {
     margin-bottom: 16px;
 }
 
-.link,
+
+.socials > a,
+.booklist > li > a{
+     text-decoration: none;
+}
+
 .navigation > a,
-a:hover {
+td > a
+{
     text-decoration: none;
     color: #000;
 }
