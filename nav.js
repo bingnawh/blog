@@ -5,7 +5,7 @@ var nav =
                     About\
                 </li>\
                 </a>\
-                <a href="index">\
+                <a href="blog">\
                 <li class="navigation-item">\
                     Blog\
                 </li>\
