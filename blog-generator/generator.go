@@ -25,11 +25,11 @@ type PostMetadata struct {
 }
 
 const raw_posts_directory_string = "./raw/"
-const index_name = "index.html"
+const blog_name = "blog.html"
 
 func createIndex(index Index, indexFileName string) {
-	fmt.Println("Creating index.html...")
-	t := template.Must(template.ParseFiles("templates/index.html"))
+	fmt.Println("Creating blog.html...")
+	t := template.Must(template.ParseFiles("templates/blog.html"))
 	f, _ := os.Create(indexFileName)
 	defer f.Close()
 	_ = t.Execute(f, index)
@@ -44,7 +44,7 @@ func GenerateBlog() {
 		body := blackfriday.Run(content)
 		blogPostName := FormatBlogPostName(frontMatter["title"])
 		link := CreateLink(blogPostName)
-		log.Println("Creating link for index.html at ", link)
+		log.Println("Creating link for blog.html at ", link)
 		metadata := PostMetadata{Title: frontMatter["title"],
 			Date: frontMatter["date"], Link: link}
 		post := &Post{Metadata: metadata, Body: template.HTML(body)}
@@ -62,6 +62,6 @@ func GenerateBlog() {
 		index.PostsMetadata = append(index.PostsMetadata, metadata)
 
 	}
-	indexFileName := index_name
+	indexFileName := blog_name
 	createIndex(index, indexFileName)
 }
